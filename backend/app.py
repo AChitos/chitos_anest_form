@@ -8,6 +8,7 @@ CORS(app)
 
 CSV_FILE = "patients.csv"
 
+
 @app.route('/get_patients', methods=['GET'])
 def get_patients():
     try:
@@ -18,6 +19,7 @@ def get_patients():
     except Exception as e:
         print("Error retrieving patients:", str(e))
         return jsonify({"error": str(e)}), 500
+
 
 @app.route('/add_patient', methods=['POST'])
 def add_patient():
@@ -32,6 +34,7 @@ def add_patient():
     except Exception as e:
         print("Error adding patient:", str(e))
         return jsonify({"error": str(e)}), 500
+
 
 @app.route('/update_patient/<int:patient_index>', methods=['PUT'])
 def update_patient(patient_index):
@@ -50,7 +53,8 @@ def update_patient(patient_index):
     except Exception as e:
         print("Error updating patient:", str(e))
         return jsonify({"error": str(e)}), 500
-    
+
+
 @app.route('/delete_patient/<int:patient_index>', methods=['DELETE'])
 def delete_patient(patient_index):
     try:
@@ -65,6 +69,7 @@ def delete_patient(patient_index):
     except Exception as e:
         print("Error deleting patient:", str(e))
         return jsonify({"error": str(e)}), 500
+
 
 if __name__ == "__main__":
     app.run(debug=True)
