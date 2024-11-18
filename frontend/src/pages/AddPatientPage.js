@@ -102,10 +102,10 @@ function AddPatientPage() {
         <input name="height" placeholder="Ύψος" type="number" value={formData.height} onChange={handleFormChange} required />
         
         <label>BMI</label>
-        <input name="bmi" placeholder="ΔΜΣ" value={formData.bmi} readOnly />
+        <input name="bmi" placeholder="BMI" value={formData.bmi} readOnly />
         
         <label>Κατηγορία BMI</label>
-        <input name="bmiCategory" placeholder="Κατηγορία ΔΜΣ" value={formData.bmiCategory} readOnly />
+        <input name="bmiCategory" placeholder="Κατηγορία BMI" value={formData.bmiCategory} readOnly />
         
         <label>Ημερομηνία Χειρουργείου</label>
         <input name="surgery_date" type="date" value={formData.surgery_date} onChange={handleFormChange} required />
@@ -114,7 +114,7 @@ function AddPatientPage() {
         <input name="surgeon_name" placeholder="Όνομα Χειρουργού" value={formData.surgeon_name} onChange={handleFormChange} required />
         
         <label>Συνταγές</label>
-        <textarea name="prescriptions" placeholder="Συ��ταγές" value={formData.prescriptions} onChange={handleFormChange} />
+        <textarea name="prescriptions" placeholder="Συνταγές" value={formData.prescriptions} onChange={handleFormChange} />
         
         <label>Αλλεργίες</label>
         <textarea name="allergies" placeholder="Αλλεργίες" value={formData.allergies} onChange={handleFormChange} />
