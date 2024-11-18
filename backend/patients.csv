@@ -1,3 +1,2 @@
 name,surname,age,sex,weight,height,bmi,surgery_date,surgeon_name,prescriptions,allergies,bmiCategory
-Liana,Melana,23,Female,54,164,20.1,Normal weight,2024-11-16,Chitos,Paracetamol,Nothing
 Georgios,Chitos,32,Female,72,175,23.5,Normal weight,2024-11-16,"Marinopoulos, permekernlis",Paracetamol,Nothing
