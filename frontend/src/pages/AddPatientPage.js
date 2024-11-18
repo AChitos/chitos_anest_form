@@ -78,48 +78,48 @@ function AddPatientPage() {
 
   return (
     <div className="container">
-      <h1 className="title">Add New Patient</h1>
+      <h1 className="title">Προσθήκη Νέου Ασθενή</h1>
       <form className="form" onSubmit={handleSubmit}>
-        <label>Name</label>
-        <input name="name" placeholder="Name" value={formData.name} onChange={handleFormChange} required />
+        <label>Όνομα</label>
+        <input name="name" placeholder="Όνομα" value={formData.name} onChange={handleFormChange} required />
         
-        <label>Surname</label>
-        <input name="surname" placeholder="Surname" value={formData.surname} onChange={handleFormChange} required />
+        <label>Επώνυμο</label>
+        <input name="surname" placeholder="Επώνυμο" value={formData.surname} onChange={handleFormChange} required />
         
-        <label>Age</label>
-        <input name="age" placeholder="Age" type="number" value={formData.age} onChange={handleFormChange} required />
+        <label>Ηλικία</label>
+        <input name="age" placeholder="Ηλικία" type="number" value={formData.age} onChange={handleFormChange} required />
         
-        <label>Sex</label>
+        <label>Φύλο</label>
         <select name="sex" value={formData.sex} onChange={handleFormChange}>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
+          <option value="Male">Άνδρας</option>
+          <option value="Female">Γυναίκα</option>
         </select>
         
-        <label>Weight (kg)</label>
-        <input name="weight" placeholder="Weight" type="number" value={formData.weight} onChange={handleFormChange} required />
+        <label>Βάρος (kg)</label>
+        <input name="weight" placeholder="Βάρος" type="number" value={formData.weight} onChange={handleFormChange} required />
         
-        <label>Height (cm)</label>
-        <input name="height" placeholder="Height" type="number" value={formData.height} onChange={handleFormChange} required />
+        <label>Ύψος (cm)</label>
+        <input name="height" placeholder="Ύψος" type="number" value={formData.height} onChange={handleFormChange} required />
         
         <label>BMI</label>
-        <input name="bmi" placeholder="BMI" value={formData.bmi} readOnly />
+        <input name="bmi" placeholder="ΔΜΣ" value={formData.bmi} readOnly />
         
-        <label>BMI Category</label>
-        <input name="bmiCategory" placeholder="BMI Category" value={formData.bmiCategory} readOnly />
+        <label>Κατηγορία BMI</label>
+        <input name="bmiCategory" placeholder="Κατηγορία ΔΜΣ" value={formData.bmiCategory} readOnly />
         
-        <label>Surgery Date</label>
+        <label>Ημερομηνία Χειρουργείου</label>
         <input name="surgery_date" type="date" value={formData.surgery_date} onChange={handleFormChange} required />
         
-        <label>Surgeon's Name</label>
-        <input name="surgeon_name" placeholder="Surgeon's Name" value={formData.surgeon_name} onChange={handleFormChange} required />
+        <label>Όνομα Χειρουργού</label>
+        <input name="surgeon_name" placeholder="Όνομα Χειρουργού" value={formData.surgeon_name} onChange={handleFormChange} required />
         
-        <label>Prescriptions</label>
-        <textarea name="prescriptions" placeholder="Prescriptions" value={formData.prescriptions} onChange={handleFormChange} />
+        <label>Συνταγές</label>
+        <textarea name="prescriptions" placeholder="Συ��ταγές" value={formData.prescriptions} onChange={handleFormChange} />
         
-        <label>Allergies</label>
-        <textarea name="allergies" placeholder="Allergies" value={formData.allergies} onChange={handleFormChange} />
+        <label>Αλλεργίες</label>
+        <textarea name="allergies" placeholder="Αλλεργίες" value={formData.allergies} onChange={handleFormChange} />
         
-        <button type="submit">Add Patient</button>
+        <button type="submit">Προσθήκη Ασθενή</button>
       </form>
     </div>
   );

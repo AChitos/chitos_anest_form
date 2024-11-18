@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 function WelcomePage() {
   return (
     <div className="welcome-container">
-      <h1 className="title">Welcome to Patient Management System</h1>
+      <h1 className="title">Καλώς ήρθατε στο Σύστημα Διαχείρισης Ασθενών</h1>
       <p className="welcome-text">
-        A comprehensive solution for managing patient records and information.
+        Μια ολοκληρωμένη λύση για τη διαχείριση αρχείων και πληροφοριών ασθενών.
       </p>
       <div className="welcome-actions">
-        <Link to="/add" className="welcome-button">Add New Patient</Link>
-        <Link to="/dataset" className="welcome-button">View All Patients</Link>
+        <Link to="/add" className="welcome-button">Προσθήκη Νέου Ασθενή</Link>
+        <Link to="/dataset" className="welcome-button">Προβολή Όλων των Ασθενών</Link>
       </div>
     </div>
   );

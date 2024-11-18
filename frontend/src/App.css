@@ -105,6 +105,62 @@
   background-color: #c82333;
 }
 
+.table input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.table .action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.table .save-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9em;
+  min-width: 70px;
+}
+
+.table .delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9em;
+  min-width: 70px;
+}
+
+.table .save-button:hover {
+  background-color: #218838;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table .delete-button:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table .save-button:active,
+.table .delete-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
 nav {
   margin-bottom: 20px;
   padding: 10px 0;
@@ -199,6 +255,32 @@ nav {
 
 .nav-link:hover::after {
   transform: scaleX(1);
+}
+
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #2193b0;
+  box-shadow: 0 0 5px rgba(33, 147, 176, 0.3);
+}
+
+.search-input::placeholder {
+  color: #999;
 }
 
 

@@ -12,13 +12,13 @@ function App() {
     <div className="container">
       <nav>
         <Link to="/" className={`nav-link ${location.pathname === "/" ? "active" : ""}`}>
-          Home
+          Αρχική
         </Link>
         <Link to="/add" className={`nav-link ${location.pathname === "/add" ? "active" : ""}`}>
-          Add Patient
+          Προσθήκη Ασθενή
         </Link>
         <Link to="/dataset" className={`nav-link ${location.pathname === "/dataset" ? "active" : ""}`}>
-          View Dataset
+          Προβολή Ασθενών
         </Link>
       </nav>
 
